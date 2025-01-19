@@ -1,3 +1,5 @@
+import {cart} from "../data/cart.js";
+
 let productsHTML = '';
 
 products.forEach((product) => {
@@ -81,11 +83,6 @@ document.querySelectorAll('.js-add-to-cart').forEach((button) => {
          cart.forEach((item) => {
           cartQuantity += item.quantity  
          });
-         if(cartQuantity > 3){
-          alert('Sorry You cannot add more items.');
-          cartQuantity = cartQuantity;
-          return;
-        }
         
         document.querySelector('.js-total-quantity').innerHTML = cartQuantity;
         
