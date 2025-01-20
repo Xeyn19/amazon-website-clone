@@ -100,4 +100,4 @@ document.querySelectorAll('.js-add-to-cart').forEach((button) => {
     });
 });
 
-
+window.onload = updateCartQuantity;
