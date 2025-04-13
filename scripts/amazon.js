@@ -7,13 +7,13 @@ let productsHTML = '';
 
 products.forEach((product) => {
     productsHTML += `
-        <div class="product-container">
+        <div class="product-container js-product-container-${product.id}">
           <div class="product-image-container">
             <img class="product-image"
               src="${product.image}">
           </div>
 
-          <div class="product-name limit-text-to-2-lines">
+          <div class="product-name-${product.id} limit-text-to-2-lines" >
             ${product.name}
           </div>
 
@@ -96,4 +96,18 @@ document.querySelectorAll('.js-add-to-cart').forEach((button) => {
     });
 });
 
+function searchFilter(products) {
+  const searchInput = document.querySelector('.js-search-bar');
+
+  searchInput.addEventListener('input', () => {
+    const searchValue = searchInput.value.toLowerCase();
+
+    products.forEach((item) => {
+      const itemValue = item.name.toLowerCase();
+      const productDiv = document.querySelector(`.js-product-container-${item.id}`);
+      productDiv.classList.toggle('hidden', !itemValue.includes(searchValue));
+    });
+  });
+}
+searchFilter(products);
 window.onload = updateCartQuantity();
