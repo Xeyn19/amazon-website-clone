@@ -1,8 +1,15 @@
+<<<<<<< HEAD
 import { cart, removeFromCart, calculateCartQuantity, updateQuantity, updateDeliveryOption } from "../data/cart.js";
 import { products } from "../data/products.js";
 import { formatCurrency } from "./utils/money.js";
 import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
 import { deliveryOptions } from "../data/deliveryOptions.js";
+=======
+import { cart, removeFromCart, calculateCartQuantity, updateQuantity } from "../data/cart.js";
+import { products } from "../data/products.js";
+import { formatCurrency } from "./utils/money.js";
+import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
+>>>>>>> f82944fd8277e58c545dabd3623af64f7b594f2e
 
 
 const today = dayjs();
@@ -185,6 +192,7 @@ document.querySelectorAll('.js-save-link').forEach((saveLink) => {
 
   });
 });
+<<<<<<< HEAD
 document.querySelectorAll('.js-delivery-option').forEach((element) => {
   element.addEventListener('click', () => {
     const {productId , deliveryOptionId} = element.dataset;
@@ -193,3 +201,5 @@ document.querySelectorAll('.js-delivery-option').forEach((element) => {
 
   })
 });
+=======
+>>>>>>> f82944fd8277e58c545dabd3623af64f7b594f2e
