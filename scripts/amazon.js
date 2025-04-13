@@ -96,7 +96,7 @@ document.querySelectorAll('.js-add-to-cart').forEach((button) => {
     });
 });
 
-<<<<<<< HEAD
+
 function searchFilter(products) {
   const searchInput = document.querySelector('.js-search-bar');
 
@@ -111,6 +111,5 @@ function searchFilter(products) {
   });
 }
 searchFilter(products);
-=======
->>>>>>> f82944fd8277e58c545dabd3623af64f7b594f2e
+
 window.onload = updateCartQuantity();

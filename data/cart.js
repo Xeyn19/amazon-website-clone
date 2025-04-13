@@ -60,7 +60,6 @@ export function updateQuantity(productId, newQuantity){
     cart.forEach((cartItem) => {
         if(productId === cartItem.productId){
             matchingItem = cartItem;
-<<<<<<< HEAD
         }
     });
     matchingItem.quantity = newQuantity;
@@ -75,19 +74,15 @@ export function updateDeliveryOption(productId, deliveryOptionId) {
     cart.forEach((cartItem) => {
         if(productId === cartItem.productId){
             matchingItem = cartItem;
-=======
->>>>>>> f82944fd8277e58c545dabd3623af64f7b594f2e
+
         }
     });
     matchingItem.quantity = newQuantity;
 
-<<<<<<< HEAD
     matchingItem.deliveryOptionId = deliveryOptionId;
 
     saveToStorage();
 
-=======
 
     saveToStorage();
->>>>>>> f82944fd8277e58c545dabd3623af64f7b594f2e
 }
