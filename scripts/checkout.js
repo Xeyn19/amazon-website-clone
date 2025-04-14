@@ -152,6 +152,7 @@ document.querySelectorAll('.js-save-link').forEach((saveLink) => {
     updateCartQuantity();
   });
 });
+console.log(cart)
 
 // Delivery option change
 document.querySelectorAll('.js-delivery-option').forEach((element) => {
