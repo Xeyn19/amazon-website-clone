@@ -5,6 +5,7 @@ body {
      on all sides. This removes the default margins. */
   margin: 0;
 }
+@plugin "daisyui";
 
 /* <p> elements have a default margin on the top
    and bottom. This removes the default margins. */
